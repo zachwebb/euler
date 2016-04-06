@@ -6,7 +6,18 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 var x = 1;
 var y = 2;
-var z = x + y;
+var z = 0;
+var sum = 0;
 
-console.log(z);
+while (z < 4000000) {
+	z = y + x;
+	x = y;
+	y = z;
+	console.log(z);
+
+	if (z % 2 === 0){
+		sum += z;
+		console.log("Evens add to: " + sum);
+	};
+};
 
