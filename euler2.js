@@ -13,7 +13,7 @@ while (z < 4000000) {
 	z = y + x;
 	x = y;
 	y = z;
-	console.log(z);
+	console.log(x);
 
 	if (z % 2 === 0){
 		sum += z;
